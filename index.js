@@ -1,6 +1,12 @@
 // require your server and launch it here
 const server = require("./api/server");
+const helmet = require("helmet")
+const cors = require("cors")
 
-server.listen(4000, () => {
-	console.log("running at http://localhost:4000")
+const port = process.env.PORT || 4000	
+server.use(helmet())
+server.use(cors())
+
+server.listen(port, () => {
+	console.log(`running at http://localhost:${port}`)
 })
