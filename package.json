@@ -11,6 +11,7 @@
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
