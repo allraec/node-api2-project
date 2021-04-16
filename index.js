@@ -3,7 +3,7 @@ const server = require("./api/server");
 const helmet = require("helmet")
 const cors = require("cors")
 
-const port = process.env.PORT || 4000	
+const port = process.env.PORT || 'production'	
 server.use(helmet())
 server.use(cors())
 
