@@ -15,7 +15,7 @@ const sharedConfig = {
 }
 
 module.exports = {
-  production: {
+  development: {
     ...sharedConfig,
     connection: { filename: './data/lambda.db3' },
   },
