@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "engines": {
     "node": "15.14.0"
-    },
+  },
   "scripts": {
     "start": "node index.js",
     "server": "nodemon --require dotenv/config index.js",
